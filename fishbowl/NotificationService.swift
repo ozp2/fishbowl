@@ -35,7 +35,7 @@ class NotificationService: ObservableObject {
         guard notificationPermission == .authorized && !suggestions.isEmpty else { return }
         
         let content = UNMutableNotificationContent()
-        content.title = "💡 Intelligent Suggestions"
+        content.title = "Intelligent Suggestions"
         content.sound = .default
         
         if suggestions.count == 1 {
@@ -79,7 +79,7 @@ class NotificationService: ObservableObject {
         guard notificationPermission == .authorized && !contradictions.isEmpty else { return }
         
         let content = UNMutableNotificationContent()
-        content.title = "⚠️ Thought Contradictions"
+        content.title = "Thought Contradictions"
         content.sound = .default
         
         if contradictions.count == 1 {
@@ -134,7 +134,7 @@ class NotificationService: ObservableObject {
         guard notificationPermission == .authorized && !breakthroughs.isEmpty else { return }
         
         let content = UNMutableNotificationContent()
-        content.title = "🎯 Breakthroughs!"
+        content.title = "Breakthroughs!"
         content.sound = .default
         
         if breakthroughs.count == 1 {
@@ -153,7 +153,7 @@ class NotificationService: ObservableObject {
         guard notificationPermission == .authorized && !actions.isEmpty else { return }
         
         let content = UNMutableNotificationContent()
-        content.title = "📝 Personalized Action Items"
+        content.title = "Personalized Action Items"
         content.sound = .default
         
         if actions.count == 1 {
@@ -172,7 +172,7 @@ class NotificationService: ObservableObject {
         guard notificationPermission == .authorized && !themes.isEmpty else { return }
         
         let content = UNMutableNotificationContent()
-        content.title = "🏷️ New Themes Discovered"
+        content.title = "New Themes Discovered"
         content.sound = .default
         
         if themes.count == 1 {
@@ -246,7 +246,7 @@ class NotificationService: ObservableObject {
     
     private func scheduleDaily() {
         let content = UNMutableNotificationContent()
-        content.title = "🧠 Daily Thought Analysis"
+        content.title = "Daily Thought Analysis"
         content.body = "Time to analyze today's thoughts for insights and patterns"
         content.sound = .default
         
