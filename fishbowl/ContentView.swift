@@ -66,7 +66,7 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 } else {
                     // Text editor
-                    ZSnotack(alignment: .topLeading) {
+                    ZStack(alignment: .topLeading) {
                         if journalText.isEmpty {
                             Text("Write your thoughts here...")
                                 .foregroundColor(Color.mainText)
