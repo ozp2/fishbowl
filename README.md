@@ -29,8 +29,9 @@ A macOS menu bar app for journaling and AI-powered thought analysis using local 
 
 2. Start Ollama:
    ```bash
-   ollama serve
+   ollama run llama3.2:1b
    ```
+   *You can exit the chat (Ctrl+C) and the server keeps running for Fishbowl.*
 
 3. Build the app:
    ```bash
@@ -97,7 +98,7 @@ Debug builds include detailed logging in the Xcode console covering analysis tim
 ## Troubleshooting
 
 **Analysis not working?**
-1. Ensure Ollama is running: `ollama serve`
+1. Ensure Ollama is running: `ollama run llama3.2:1b`
 2. Check model installation: `ollama list`
 3. Verify connectivity to localhost:11434
 

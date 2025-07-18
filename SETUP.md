@@ -22,12 +22,13 @@ This downloads a ~1.3GB file that powers the analysis.
 
 ## 3. Start Ollama
 
-Run this in Terminal:
 ```bash
-ollama serve
+ollama run llama3.2:1b
 ```
 
-Keep this window open while using Fishbowl.
+You can exit the chat (Ctrl+C) and the server keeps running for Fishbowl.
+
+**Alternative:** For background service: `brew services start ollama`
 
 ## 4. Run Fishbowl
 
@@ -37,7 +38,7 @@ Keep this window open while using Fishbowl.
 ## Common Questions
 
 ### Analysis Not Working?
-1. Make sure Ollama is running (`ollama serve`)
+1. Make sure Ollama is running: `ollama run llama3.2:1b`
 2. Wait a few seconds - first analysis is slower
 3. Try the refresh button if needed
 
