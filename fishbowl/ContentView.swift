@@ -73,9 +73,11 @@ struct ContentView: View {
                                 .padding(.horizontal, 14)
                                 .padding(.vertical, 12)
                                 .font(.custom("NunitoSans-Regular", size: 14))
+                                .kerning(0.2)
                         }
                         TextEditor(text: $journalText)
                             .font(.custom("NunitoSans-Regular", size: 14))
+                            .kerning(0.2)
                             .padding(.leading, 8)
                             .padding(.trailing, 14)
                             .padding(.vertical, 12)
