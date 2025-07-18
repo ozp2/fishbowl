@@ -87,7 +87,6 @@ struct DailyAnalysisView: View {
                                 Image(systemName: "burst.fill")
                                     .font(.system(size: 11))
                                     .foregroundColor(Color.accent)
-                                    .padding(.top, 3)
                                 Text(area)
                                     .font(.custom("NunitoSans-Regular", size: 11))
                                     .foregroundColor(Color.mainText.opacity(0.9))
